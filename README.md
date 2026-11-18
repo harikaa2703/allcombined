@@ -1,3 +1,5 @@
+docker-compose.yml
+
 
 services:
   db:
@@ -61,23 +63,28 @@ docker compose down
 docker compose up -d
 
 ======================================================================================jenkins=====================
+
 cd /d "C:\Users\harik\Downloads\apache-tomcat-9.0.120-windows-x64\apache-tomcat-9.0.120\bin"
 catalina.bat run
+
 ====================================kubernetes===================================
-Start Minikube	minikube start
-Check nodes	kubectl get nodes
-Create deployment	kubectl create deployment app --image=nginx
-Check Pods	kubectl get pods
-Check deployments	kubectl get deployments
-Scale deployment	kubectl scale deployment app --replicas=5
-Expose application	kubectl expose deployment app --type=NodePort --port=80
-Delete Pod	kubectl delete pod pod_name
-Rolling update	kubectl set image deployment/app nginx=nginx:1.27
-Rollback	kubectl rollout undo deployment/app
-Check rollout	kubectl rollout status deployment/app
+
+Start Minikube --	minikube start
+Check nodes	-- kubectl get nodes
+Create deployment	-- kubectl create deployment app --image=nginx
+Check Pods	-- kubectl get pods
+Check deployments----	kubectl get deployments
+Scale deployment---	kubectl scale deployment app --replicas=5
+Expose application	---kubectl expose deployment app --type=NodePort --port=80
+Delete Pod	-----kubectl delete pod pod_name
+Rolling update	---kubectl set image deployment/app nginx=nginx:1.27
+Rollback------	kubectl rollout undo deployment/app
+Check rollout	-----kubectl rollout status deployment/app
 
 
 ======================================nagios==================
+
+
 docker pull jasonrivers/nagios:latest
 
 docker run --name nagiosdemo -d -p 8888:80 jasonrivers/nagios:latest
@@ -96,9 +103,11 @@ ls /opt/nagios/etc/conf.d
 
 
 
- Username: nagiosadmin
- Password: nagios
+	Username: nagiosadmin
+	Password: nagios
 ==============================================aws================
+
+
 1. Open Services → EC2 → Launch Instance.
 2. Configure:
 Setting	Value
@@ -174,6 +183,7 @@ CMD ["catalina.sh", "run"]
 
 
 ----------------------------------
+
 sudo docker build -t mavenweb1 .
 sudo docker run -d --name app-demo3 -p 6061:8080 mavenweb1
 
@@ -184,3 +194,11 @@ Select your running Ubuntu instance.
 Under the Details tab, find Public IPv4 address.
 Copy that IP address.
 ]
+
+
+
+
+
+
+
+
