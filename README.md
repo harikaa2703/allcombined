@@ -1,6 +1,3 @@
-# allcombined
-=============================docker==================
-docker-compose.yml
 
 services:
   db:
@@ -99,8 +96,8 @@ ls /opt/nagios/etc/conf.d
 
 
 
-	Username: nagiosadmin
-	Password: nagios
+ Username: nagiosadmin
+ Password: nagios
 ==============================================aws================
 1. Open Services → EC2 → Launch Instance.
 2. Configure:
@@ -187,11 +184,3 @@ Select your running Ubuntu instance.
 Under the Details tab, find Public IPv4 address.
 Copy that IP address.
 ]
-
-
-
-
-
-
-
-
