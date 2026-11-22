@@ -81,6 +81,8 @@ Rolling update	---kubectl set image deployment/app nginx=nginx:1.27
 Rollback------	kubectl rollout undo deployment/app
 Check rollout	-----kubectl rollout status deployment/app
 
+minikube service app
+
 
 ======================================nagios==================
 
