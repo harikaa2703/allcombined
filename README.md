@@ -200,6 +200,14 @@ Copy that IP address.
 
 
 
+clean
+install
+test
+build
+
+
+
+
 
 
 
